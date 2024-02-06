@@ -1,0 +1,62 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Greeting Generator</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Greeting Generator</h1>
+    
+    <!-- Event Selection -->
+    <label for="event">Select an event:</label>
+    <select id="event" name="event">
+      <option value="birthday">Birthday</option>
+      <option value="wedding">Wedding</option>
+      <option value="graduation">Graduation</option>
+      <!-- Add more event options as needed -->
+    </select>
+
+    <!-- Additional Questions based on Event -->
+    <div id="additional-questions">
+      <!-- Questions will be dynamically added here based on the selected event -->
+    </div>
+
+    <!-- General Greeting Options -->
+    <label for="greeting-type">Select greeting type:</label>
+    <select id="greeting-type" name="greeting-type">
+      <option value="song">Song</option>
+      <option value="short">Short</option>
+      <option value="long">Long</option>
+      <option value="letter">Letter</option>
+      <!-- Add more greeting type options as needed -->
+    </select>
+
+    <label for="atmosphere">Select atmosphere:</label>
+    <select id="atmosphere" name="atmosphere">
+      <option value="happy">Happy</option>
+      <option value="entertaining">Entertaining</option>
+      <option value="funny">Funny</option>
+      <!-- Add more atmosphere options as needed -->
+    </select>
+
+    <!-- "Write me a greeting" Button -->
+    <button id="generate-btn">Write me a greeting</button>
+
+    <!-- Display Selected Options and Generated Greeting -->
+    <div id="selected-options">
+      <!-- Selected options will be displayed here -->
+    </div>
+    <div id="generated-greeting">
+      <!-- Generated greeting will be displayed here -->
+    </div>
+
+    <!-- "I want something different" Button -->
+    <button id="change-btn">I want something different</button>
+  </div>
+
+  <!-- <script src="greeting.js"></script> -->
+</body>
+</html>
